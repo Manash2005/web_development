@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/">
+    <style type="text/css">
+        .mt-5{
+            margin-left: ($spacer * .25) !important
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <dl>
+            <dt>Adhaar Number</dt>
+            <dd><input type="text" value="675779720669" readonly></dd>
+            <dt>First Name</dt>
+            <dd><input type="text" value="Manash"></dd>
+            <dt class="mt-5">Last Name</dt>
+            <dd><input type="text" maxlength="10" minlength="5"></dd>
+            <dt>DOB</dt>
+            <dd><input type="text" value="22/08/2005"></dd>
+            <dt>Email</dt>
+            <dd><input type="text" autofocus></dd>
+            <dt>Password</dt>
+            <dd><input type="password"></dd>
+            <dt>Search</dt>
+            <dd><input type="text" name="textarea" size="60" list="autosuggetion"></dd>
+            
+            <!-- auto suggetion  pannel-->
+            <datalist id="autosuggetion">
+                <option>HTML project</option>
+                <option>CSS project</option>
+                <option>Java Script project</option>
+                <option>C project</option>
+                <option>Python project</option>
+            </datalist>
+            
+                <dt>Color name</dt>
+                <dd><input type="text" name="colorName" placeholder="Username should not contain Numbers" pattern="[^0-9]"></dd>
+                <dd>
+                <dd><input type="text" name="colorName" placeholder="Username should not contain Numbers" pattern="[^a,z,,s ]"></dd>
+                <dd>
+                <button name="update" value="updateDetails">Update-Button</button>
+                <button>Add to cart</button>
+            </dd>
+        </dl>
+    </form>
+</body>
+</html>

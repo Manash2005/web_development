@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head{
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid black; */
+            justify-content: space-around;
+        }
+        .card{
+            border: 1px solid black;
+            box-shadow: 2px 2px 0.5px black;
+            width: 300px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .body{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .card:target{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div> <a href="#HTML">HTML</a></div>
+        <div> <a href="#CSS">CSS</a></div>
+        <div> <a href="#JS">JS</a></div>
+    </div>
+    <div class="body">
+
+        <div class="card" id="HTML">
+            <h2>HTML</h2>
+            <p>It is markup language</p>
+        </div>
+        <div class="card" id="CSS">
+            <h2>CSS</h2>
+            <p>It is styling language</p>  
+        </div>
+        <div class="card" id="JS">
+            <h2>JavaScript</h2>
+            <p>It is Scripting language</p>
+        </div>
+    </div>
+</body>
+</html>

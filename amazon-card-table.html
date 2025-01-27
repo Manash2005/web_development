@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        img{
+            width: 150px;
+            height: 150px;
+        }
+
+        img{
+            margin: 10px;
+        }
+        body{
+            background-color: rgb(232, 212, 212);
+        }
+        .main-table{
+            background-color: rgb(232, 212, 212);
+        }
+        .sub-table{
+            background-color: rgb(255, 255, 255);
+            margin: 26px;
+            box-shadow: 5px 5px 15px red;
+            transition: all 0.3s ease;
+        }
+        .sub-table:hover{
+            transform: scale(1.08);
+            box-shadow: 15px 15px 25px red;
+        }
+        
+      
+    </style>
+</head>
+<body>
+    <table class="main-table">
+        <tbody>
+            <tr>
+                <td>
+                    <table class="sub-table">
+                        <thead>
+                            <th colspan="2">
+                                    Categories to explore
+                            </th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                               <td><img src="public/images/monitor.jpg" alt=""> <br>Monitors</td>
+                                <td><img src="public/images/mouse.jpg" alt=""> <br>Mouse</td>
+                            </tr>
+                            <tr>
+                                <td><img src="public/images/keyboard.jpg" alt=""> <br> Keyboard</td>
+                                <td><img src="public/images/tablet.jpg" alt=""> <br> Graphic Tablet</td>
+                            </tr>
+                        </tbody>
+                   </table>
+                </td>
+                <td>
+                    <table class="sub-table" style="padding: 20px;">
+                        <thead>
+                            <th colspan="2">
+                                    Categories to explore
+                            </th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                               <td><img src="public/images/bedsheet1.jpg" alt=""></td>
+                                <td><img src="public/images/bedsheet2.jpg" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td><img src="public/images/bedsheet3.jpg" alt=""> </td>
+                                <td><img src="public/images/bedsheet4.jpg" alt=""> </td>
+                            </tr>
+                        </tbody>
+                   </table>
+                </td>
+                <td>
+                    <table class="sub-table">
+                        <thead>
+                            <th colspan="2">
+                                    Categories to explore
+                            </th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                               <td><img src="public/images/suitcase1.jpg" alt=""> <br>Suitcase</td>
+                                <td><img src="public/images/watch.jpg" alt=""> <br>Watch</td>
+                            </tr>
+                            <tr>
+                                <td><img src="public/images/suitcase2.jpg" alt=""> <br> Suitcase</td>
+                                <td><img src="public/images/necklace.jpg" alt=""> <br> Necklace</td>
+                            </tr>
+                        </tbody>
+                   </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

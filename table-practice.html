@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Points Table</title>
+  <style type="text/css">
+    body{
+        background-color: lightgray;
+    }
+td, th {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.table-container {
+    padding: 20px;
+    background-color: rgb(227, 221, 214);
+}
+
+table {
+    width: 100%;
+    background-color: rgb(219, 234, 239);
+}
+
+thead {
+  background-color: #4CAF50;
+  color: white;
+}
+
+td img.team-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.win{
+    background-color: green;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.lose{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+caption{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  </style>
+</head>
+<body>
+  <div class="table-container">
+      <table>
+        <caption>
+            Asia cup points table
+        </caption>
+      <thead>
+        <tr>
+          <th>Pos</th>
+          <th colspan="2">Teams</th>
+          <th>Matches</th>
+          <th>Won</th>
+          <th>Lost</th>
+          <th>Tied</th>
+          <th>Points</th>
+          <th>NRR</th>
+          <th colspan="5">Series Form</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td rowspan="1">
+            <img src="public/images/india-flag.webp" alt="Team 1" class="team-image">
+          </td>
+          <td>India</td>
+          <td>1</td>
+          <td>8</td>
+          <td>2</td>
+          <td>0</td>
+          <td>16</td>
+          <td>+1.25</td>
+          <td><span class="win">W</span></td>
+          <td><span class="lose">L</span></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td rowspan="1">
+            <img src="public/images/england-flag.svg" alt="Team 1" class="team-image">
+          </td>
+          <td>England</td>
+          <td>1</td>
+          <td>8</td>
+          <td>2</td>
+          <td>0</td>
+          <td>16</td>
+          <td>+1.25</td>
+          <td><span class="lose">L</span></td>
+          <td><span class="win">W</span></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td rowspan="1">
+            <img src="public/images/pakistan-flag.png" alt="Team 1" class="team-image">
+          </td>
+          <td>Pakistan</td>
+          <td>1</td>
+          <td>8</td>
+          <td>2</td>
+          <td>0</td>
+          <td>16</td>
+          <td>+1.25</td>
+          <td><span class="lose">L</span></td>
+          <td><span class="lose">L</span></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td rowspan="1">
+            <img src="public/images/australia-flag.png" alt="Team 1" class="team-image">
+          </td>
+          <td>Australia</td>
+          <td>1</td>
+          <td>8</td>
+          <td>2</td>
+          <td>0</td>
+          <td>16</td>
+          <td>+1.25</td>
+          <td><span class="win">W</span></td>
+          <td><span class="win">W</span></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="11">Cricbuzz</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</body>
+</html>

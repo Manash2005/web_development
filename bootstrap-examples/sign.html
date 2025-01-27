@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <form action="" class="m-3">
+        <div class="h3">
+            Register User
+        </div>
+        <dl class=" w-100 row">
+            <dt class="col-2">Username</dt>
+            <dd class="col-10">
+                <input type="text" name="username" class="form-control" equired>
+            </dd>
+            <dt class="col-2">Email</dt>
+            <dd class="col-10">
+                <input type="email" name="email" required class="form-control">
+            </dd>
+            <dt class="col-2">Password</dt>
+            <dd class="col-10">
+                <input type="password" name="password" required class="form-control">
+            </dd>
+            <dt class="col-2">Age</dt>
+            <dd class="col-10">
+                <input type="number" name="age" required class="form-control">
+            </dd>
+            <dt class="col-2">City</dt>
+            <dd class="col-10">
+                <select name="city" required class="form-select">
+                    <option value="BLR">Bangalore</option>
+                    <option value="HYD">Hyderabad</option>
+                    <option value="CHE">Chennai</option>
+                </select>
+            </dd>        
+        </dl>
+        <button class="btn btn-primary">Register User</button>
+    </form>
+</body>
+</html>

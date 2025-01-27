@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style type="text/css">
+        body{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            background-color:cornflowerblue;
+        }
+        /* Styling for form elements */
+        form {
+            background-color: antiquewhite;
+            display: inline-block;
+            padding: 20px;
+            scale: 1.8;
+            border: 1px solid black;
+            border-radius: 5px;
+            box-shadow: 1px 1px 100px 1px yellow ;
+        }
+        label {
+            margin-bottom: 5px;
+        }
+        input{
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" >
+        <br>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" >
+        <br>
+        <br>
+
+        <!--html 4-->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <input type="button" value="print" onclick="javascript:window.print()">
+        <!--html 5-->
+        <button>
+            <span class="bi  bi-person"></span>
+            submit
+        </button>
+        <button>
+            <spanc class="bi bi-arrow-clockwise"></span>
+            Reset
+        </button>
+    </form>
+</body>
+</html>

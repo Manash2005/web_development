@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="d-flex justify-content-center align-items-center">
+
+        <form action="" class="mt-3 w-25 border border-2 border-primary p-4" >
+            <h2 class="text-center">Register User</h2>
+            <dl>
+                <dt>Username</dt>
+                <dd>
+                    <input type="text" name="txtusername" id="username" class="form-control">
+                </dd>
+                <dt>Password</dt>
+                <dd>
+                    <input type="password" name="txtpassword" id="password" class="form-control">
+                </dd>
+                <dt>Select city</dt>
+                <dd>
+                    <select name="lstCities" id="cities" class="form-select">
+                        <option value="BLR" selected>Bangalore</option>
+                        <option value="HYD">Hyderabad</option>
+                        <option value="CHE">Chennai</option>
+                    </select>
+            </dd>
+            <dt>Price Range</dt>
+            <dd>
+                <input type="range" name="rangePrice" id="priceRange" class="form-range">
+            </dd>
+            <dt>Subscribed</dt>
+            <dd class="form-switch">
+                <input type="checkbox" name="chkSubscribed" id="subscribe" class="form-check-input"><label for="" class="form-check-label">Yes</label>
+            </dd>
+            <dd>
+                <button class="btn btn-primary w-100">
+                    <span class="bi bi-person-fill">Register User</span>
+                </button>
+            </dd>
+        </dl>
+    </div>
+    </form>
+</body>
+</html>

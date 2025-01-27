@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My footer</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <style type="text/css">
+        div{
+            /* border: 2px solid black; */
+        }
+        
+        footer{
+            display: grid;
+            grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr ;
+            background-color: black;
+            color: white;
+            padding: 25px;
+        }
+
+        .head{
+            text-transform: uppercase;
+        }
+
+        .title{
+            font-weight: bolder;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .head{
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: gray;
+            
+        }
+        .head~span{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .xyz span{
+            padding-bottom: 2px;
+        }
+        .icons{
+            margin-top: 25px;
+            margin-left: 10px;
+        }
+        .div_1{
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--This is footer section-->
+    <footer>
+        <div class="div_1">
+            <div class="title">
+                Shopper.
+            </div>
+            <div class="icons">
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-instagram"></span>
+                <span class="bi bi-youtube"></span>
+                <span class="bi bi-twitter"></span>
+                <span class="bi bi-github"></span>
+            </div>
+        </div>
+
+        <div>
+            <div class="head">
+                Support
+            </div>
+                <span>Contact Us</span>
+                <span>FAQs</span>
+                <span>Size Guide</span>
+                <span>Shipping and Returns</span>
+        </div>
+
+        <div>
+            <div class="head">
+                Shop
+            </div>
+                <span>Mens's shopping</span>
+                <span>Women's shopping</span>
+                <span>Kids shopping</span>
+                <span>Discounts</span>
+        </div>
+        
+        <div>
+            <div class="head">
+                Company
+            </div>
+                <span>Our story</span>
+                <span>Careers</span>
+                <span>Terms and Condition</span>
+                <span>Privacy and cookie policy</span>
+        </div>
+
+        <div>
+            <div class="head">
+                Contact
+            </div>
+                <span>1-202-555-7484</span>
+                <span>1-212-535-7458</span>
+                <span>help@shopper.com</span>
+        </div>
+    </footer>
+</body>
+</html>

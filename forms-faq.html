@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+
+        /* Styling for form elements */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            margin: 0 auto; 
+            background-color: antiquewhite;
+            border: 1px solid black;
+            scale: 1.1;
+            margin-top: 50px;
+        }
+        label {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <dl>
+            <dt>Username1</dt> <!--special characters should not be included-->
+            <dd>
+                <input type="text" name="username" placeholder="Username with no special character" pattern="[a-zA-Z0-9]*{4,15}">
+            </dd>
+            <dt>Username2</dt> <!--only alphabets with special characters-->
+            <dd>
+                <input type="text" name="username" placeholder="Username with no special character" pattern="[a-zA-Z]{4,15}">
+            </dd>
+            <dt>Username3</dt>
+            <dd>
+                <input type="text" name="username" placeholder="Username with no special character" pattern="[A-Z]{1}[A-Za-z0-9]{3,14}">
+            </dd>
+            <dt>Username4</dt>
+            <dd>
+                <input type="text" name="username" placeholder="Username with no special character" pattern="(?=.*[A-Z]\w{4,15})">
+            </dd>
+            <dt>Username5</dt>
+            <dd>
+                <input type="text" name="username" placeholder="Username with no special character" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[!&@#%])\w{4,15}">
+            </dd>
+
+            <dt>Password1</dt> 
+            <dd>
+                <input type="password" name="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]" required maxlength="15" minlength="8" disabled>
+            <dt>Age</dt> 
+            <dd>
+                <input type="number" name="txtage" required min="18" max="65" step="2">
+            </dd>
+
+            <br><br>
+
+            <button name="btnsubmit" value="submit">Submit</button>
+        </dl>
+    </form>
+</body>
+</html>
