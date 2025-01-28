@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        input:required + span{
+            color: red;
+        }
+        input:valid + span{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <form action="" class="form-control">
+        <dl>
+            <dt>Username</dt>
+            <dd>
+                <input type="text" required><br>
+                <span class="bi bi-info-circle">Name in block letters</span>
+            </dd>
+        </dl>
+    </form>
+</body>
+</html>
